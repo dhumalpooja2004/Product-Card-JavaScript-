@@ -61,5 +61,19 @@
             </button>
         </div>
     </div>
+    <script>
+        const quantityElement=document.getElementById("quantity");
+        let quantity = parseInt(quantityElement.innerText);
+
+        function ChangeQuality(op){
+            if(op === 'inc')
+            ++quantity;
+
+            if(op === 'dec')
+            --quantity;
+
+         quantityElement.innerText = quantity;
+        }
+    </script>
 </body>
 </html>
